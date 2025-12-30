@@ -229,7 +229,7 @@ task verify(type: JavaExec) {
   mainClass = 'battlecode.instrumenter.Verifier'
   classpath = sourceSets.main.runtimeClasspath
   args = [
-    project.findProperty("team") ?: "examplefuncsplayer",
+    project.findProperty("team") ?: "mysubmission",
     project.findProperty("url") ?: sourceSets.main.output.classesDirs.getAsPath(),
   ]
 }
