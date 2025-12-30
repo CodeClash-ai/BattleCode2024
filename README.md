@@ -2,7 +2,7 @@
 
 This is the Battlecode 2024 scaffold, containing a `mysubmission` package. Read https://play.battlecode.org/bc24/getting-started!
 
-**We are using a rewritten version of the client this year, so please let teh devs know 
+**We are using a rewritten version of the client this year, so please let the devs know 
 if you encounter any issues or have any feedback!**
 
 ### Project Structure
@@ -50,6 +50,6 @@ Your submission must go in the `src/mysubmission/` package. The main robot code 
 
 Look at `gradle.properties` for project-wide configuration.
 
-If you are having any problems with the default client, please report to teh devs and
+If you are having any problems with the default client, please report to the devs and
 feel free to set the `compatibilityClient` configuration to `true` to download a different
 version of the client.
