@@ -1,0 +1,10 @@
+- Interface Summary Interface Description RobotController A RobotController allows contestants to make their robot sense and interact
+with the game world.
+
+- Class Summary Class Description Clock Clock is a singleton that allows contestants to introspect the state of their
+running code. FlagInfo GameConstants GameConstants defines constants that affect gameplay. MapInfo MapLocation This class is an immutable representation of two-dimensional coordinates
+in the battlecode world. RobotInfo RobotInfo stores basic information that was 'sensed' of another Robot.
+
+- Enum Summary Enum Description Direction This enumeration represents a direction from one MapLocation to another. GameActionExceptionType Enumerates the possible errors in GameWorld interactions that cause a GameActionException to be thrown. GlobalUpgrade Enumerates the possible types of global updates. SkillType Enumerates the different skill types a unit can specialize in. Team This enum represents the team of a robot. TrapType Enumerates possible traps that can be built.
+
+- Exception Summary Exception Description GameActionException An exception caused by a robot's interaction with the game world.

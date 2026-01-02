@@ -1,0 +1,13 @@
+========= START OF TOP NAVBAR =======
+
+========= END OF TOP NAVBAR =========
+
+## battlecode.common.*
+
+- battlecode.common. GameConstants Modifier and Type Constant Field Value public static final int ATTACK_COOLDOWN 20 public static final int ATTACK_RADIUS_SQUARED 4 public static final int BYTECODE_LIMIT 25000 public static final int COOLDOWN_LIMIT 10 public static final int COOLDOWNS_PER_TURN 10 public static final int DEFAULT_HEALTH 1000 public static final int DIG_COOLDOWN 20 public static final int DIG_COST 20 public static final int EXCEPTION_BYTECODE_PENALTY 500 public static final int FILL_COOLDOWN 30 public static final int FILL_COST 30 public static final int FLAG_BROADCAST_NOISE_RADIUS 100 public static final int FLAG_BROADCAST_UPDATE_INTERVAL 100 public static final int FLAG_DROPPED_RESET_ROUNDS 4 public static final int FLAG_MOVEMENT_COOLDOWN 20 public static final int GAME_DEFAULT_SEED 6370 public static final int GAME_MAX_NUMBER_OF_ROUNDS 2000 public static final int GLOBAL_UPGRADE_ROUNDS 600 public static final int HEAL_COOLDOWN 30 public static final int HEAL_RADIUS_SQUARED 4 public static final int INDICATOR_STRING_MAX_LENGTH 64 public static final int INITIAL_CRUMBS_AMOUNT 400 public static final int INTERACT_RADIUS_SQUARED 2 public static final int JAILED_ROUNDS 25 public static final int KILL_CRUMB_REWARD 30 public static final int MAP_MAX_HEIGHT 60 public static final int MAP_MAX_WIDTH 60 public static final int MAP_MIN_HEIGHT 20 public static final int MAP_MIN_WIDTH 20 public static final int MAX_SHARED_ARRAY_VALUE 65535 public static final int MIN_FLAG_SPACING_SQUARED 36 public static final int MOVEMENT_COOLDOWN 10 public static final int NUMBER_FLAGS 3 public static final int PASSIVE_CRUMBS_INCREASE 10 public static final int PICKUP_DROP_COOLDOWN 10 public static final int ROBOT_CAPACITY 50 public static final int SETUP_ROUNDS 200 public static final int SHARED_ARRAY_LENGTH 64 public static final java.lang.String SPEC_VERSION "3.0.5" public static final int VISION_RADIUS_SQUARED 20
+
+======= START OF BOTTOM NAVBAR ======
+
+Skip navigation links
+
+======== END OF BOTTOM NAVBAR =======

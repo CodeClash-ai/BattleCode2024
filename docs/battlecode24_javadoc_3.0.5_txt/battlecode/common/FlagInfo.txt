@@ -1,0 +1,13 @@
+- java.lang.Object
+
+- battlecode.common.FlagInfo
+
+- public class FlagInfo extends java.lang.Object
+
+- Constructor Summary Constructors Constructor and Description FlagInfo ( MapLocation loc, Team team,
+boolean pickedUp,
+int id) Method Summary All Methods Instance Methods Concrete Methods Modifier and Type Method and Description int getID () MapLocation getLocation () Team getTeam () boolean isPickedUp () Methods inherited from class java.lang.Object clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+
+- Constructor Detail FlagInfo public FlagInfo( MapLocation loc, Team team,
+boolean pickedUp,
+int id) Method Detail getLocation public MapLocation getLocation() getTeam public Team getTeam() isPickedUp public boolean isPickedUp() getID public int getID()

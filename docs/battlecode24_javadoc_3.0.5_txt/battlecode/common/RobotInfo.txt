@@ -1,0 +1,21 @@
+- java.lang.Object
+
+- battlecode.common.RobotInfo
+
+- public class RobotInfo extends java.lang.Object RobotInfo stores basic information that was 'sensed' of another Robot. This
+info is ephemeral and there is no guarantee any of it will remain the same
+between rounds.
+
+- Field Summary Fields Modifier and Type Field and Description int attackLevel The robot's current level in the attack skill. int buildLevel The robot's current level in the build skill. boolean hasFlag Whether or not the robot is holding a flag. int healLevel The robot's current level in the heal skill. int health The health of the robot. int ID The unique ID of the robot. MapLocation location The current location of the robot. Team team The Team that the robot is on. Constructor Summary Constructors Constructor and Description RobotInfo (int ID, Team team,
+int health, MapLocation location,
+boolean hasFlag,
+int attackLevel,
+int healLevel,
+int buildLevel) Method Summary All Methods Instance Methods Concrete Methods Modifier and Type Method and Description boolean equals (java.lang.Object o) int getAttackLevel () Returns the attack level of this robot. int getBuildLevel () Returns the build level of this robot. int getHealLevel () Returns the heal level of this robot. int getHealth () Returns the health of this robot. int getID () Returns the ID of this robot. MapLocation getLocation () Returns the location of this robot. Team getTeam () Returns the team that this robot is on. boolean hasFlag () Returns whether or not this robot has a flag. int hashCode () java.lang.String toString () Methods inherited from class java.lang.Object clone, finalize, getClass, notify, notifyAll, wait, wait, wait
+
+- Field Detail ID public final int ID The unique ID of the robot. team public final Team team The Team that the robot is on. health public final int health The health of the robot. location public final MapLocation location The current location of the robot. hasFlag public final boolean hasFlag Whether or not the robot is holding a flag. attackLevel public final int attackLevel The robot's current level in the attack skill. healLevel public final int healLevel The robot's current level in the heal skill. buildLevel public final int buildLevel The robot's current level in the build skill. Constructor Detail RobotInfo public RobotInfo(int ID, Team team,
+int health, MapLocation location,
+boolean hasFlag,
+int attackLevel,
+int healLevel,
+int buildLevel) Method Detail getID public int getID() Returns the ID of this robot. Returns: the ID of this robot getTeam public Team getTeam() Returns the team that this robot is on. Returns: the team that this robot is on getHealth public int getHealth() Returns the health of this robot. Returns: the health of this robot getLocation public MapLocation getLocation() Returns the location of this robot. Returns: the location of this robot hasFlag public boolean hasFlag() Returns whether or not this robot has a flag. Returns: whether or not this robot has a flag getAttackLevel public int getAttackLevel() Returns the attack level of this robot. Returns: the attack level of the robot getHealLevel public int getHealLevel() Returns the heal level of this robot. Returns: the heal level of the robot getBuildLevel public int getBuildLevel() Returns the build level of this robot. Returns: the build level of the robot equals public boolean equals(java.lang.Object o) Overrides: equals in class java.lang.Object hashCode public int hashCode() Overrides: hashCode in class java.lang.Object toString public java.lang.String toString() Overrides: toString in class java.lang.Object

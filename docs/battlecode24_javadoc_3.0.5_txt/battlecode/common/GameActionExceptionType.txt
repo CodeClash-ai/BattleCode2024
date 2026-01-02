@@ -1,0 +1,22 @@
+- java.lang.Object
+
+- java.lang.Enum< GameActionExceptionType > battlecode.common.GameActionExceptionType
+
+- All Implemented Interfaces: java.io.Serializable, java.lang.Comparable< GameActionExceptionType > public enum GameActionExceptionType extends java.lang.Enum< GameActionExceptionType > Enumerates the possible errors in GameWorld interactions that cause a GameActionException to be thrown.
+
+- Enum Constant Summary Enum Constants Enum Constant and Description CANT_DO_THAT Indicates when a robot tries to perform an action it can't. CANT_MOVE_THERE Indicates when a robot tries to move into a non-empty location. CANT_SENSE_THAT Indicates when a robot tries to sense a robot that no longer exists or is no longer
+in this robot's vision range. INTERNAL_ERROR Internal error in the GameWorld engine. IS_NOT_READY Indicates when a robot tries to execute an action, but is not currently idle. NO_ROBOT_THERE Indicates when a robot tries to perform an action on another robot, but there is
+no suitable robot there. NOT_ENOUGH_RESOURCE Indicates when a robot tries to perform an action for which it does not have enough resources. OUT_OF_RANGE Indicates when a robot tries to perform an action on a location that is outside
+its range. ROUND_OUT_OF_RANGE Indicates when round number is out of range. Method Summary All Methods Static Methods Concrete Methods Modifier and Type Method and Description static GameActionExceptionType valueOf (java.lang.String name) Returns the enum constant of this type with the specified name. static GameActionExceptionType [] values () Returns an array containing the constants of this enum type, in
+the order they are declared. Methods inherited from class java.lang.Enum clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf Methods inherited from class java.lang.Object getClass, notify, notifyAll, wait, wait, wait
+
+- Enum Constant Detail INTERNAL_ERROR public static final GameActionExceptionType INTERNAL_ERROR Internal error in the GameWorld engine. This is bad. NOT_ENOUGH_RESOURCE public static final GameActionExceptionType NOT_ENOUGH_RESOURCE Indicates when a robot tries to perform an action for which it does not have enough resources. CANT_MOVE_THERE public static final GameActionExceptionType CANT_MOVE_THERE Indicates when a robot tries to move into a non-empty location. IS_NOT_READY public static final GameActionExceptionType IS_NOT_READY Indicates when a robot tries to execute an action, but is not currently idle. CANT_SENSE_THAT public static final GameActionExceptionType CANT_SENSE_THAT Indicates when a robot tries to sense a robot that no longer exists or is no longer
+in this robot's vision range. OUT_OF_RANGE public static final GameActionExceptionType OUT_OF_RANGE Indicates when a robot tries to perform an action on a location that is outside
+its range. CANT_DO_THAT public static final GameActionExceptionType CANT_DO_THAT Indicates when a robot tries to perform an action it can't. NO_ROBOT_THERE public static final GameActionExceptionType NO_ROBOT_THERE Indicates when a robot tries to perform an action on another robot, but there is
+no suitable robot there. ROUND_OUT_OF_RANGE public static final GameActionExceptionType ROUND_OUT_OF_RANGE Indicates when round number is out of range. Method Detail values public static GameActionExceptionType [] values() Returns an array containing the constants of this enum type, in
+the order they are declared. This method may be used to iterate
+over the constants as follows: for (GameActionExceptionType c : GameActionExceptionType.values())
+  System.out.println(c); Returns: an array containing the constants of this enum type, in the order they are declared valueOf public static GameActionExceptionType valueOf(java.lang.String name) Returns the enum constant of this type with the specified name.
+The string must match exactly an identifier used to declare an
+enum constant in this type. (Extraneous whitespace characters are
+not permitted.) Parameters: name - the name of the enum constant to be returned. Returns: the enum constant with the specified name Throws: java.lang.IllegalArgumentException - if this enum type has no constant with the specified name java.lang.NullPointerException - if the argument is null

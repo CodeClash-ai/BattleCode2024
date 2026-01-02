@@ -1,0 +1,20 @@
+- java.lang.Object
+
+- java.lang.Enum< Team > battlecode.common.Team
+
+- All Implemented Interfaces: java.io.Serializable, java.lang.Comparable< Team > public enum Team extends java.lang.Enum< Team > This enum represents the team of a robot. A robot is on exactly one team.
+Player robots are on either team A or team B. Since Team is a Java 1.5 enum, you can use it in switch statements, it has all the standard enum methods ( valueOf , values , etc.), and you can safely use == for
+equality tests.
+
+- Enum Constant Summary Enum Constants Enum Constant and Description A Team A. B Team B. NEUTRAL Neutral robots. Method Summary All Methods Static Methods Instance Methods Concrete Methods Modifier and Type Method and Description boolean isPlayer () Returns whether a robot of this team is a player-controlled entity
+(team A or team B). Team opponent () Determines the team that is the opponent of this team. static Team valueOf (java.lang.String name) Returns the enum constant of this type with the specified name. static Team [] values () Returns an array containing the constants of this enum type, in
+the order they are declared. Methods inherited from class java.lang.Enum clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf Methods inherited from class java.lang.Object getClass, notify, notifyAll, wait, wait, wait
+
+- Enum Constant Detail A public static final Team A Team A. B public static final Team B Team B. NEUTRAL public static final Team NEUTRAL Neutral robots. Method Detail values public static Team [] values() Returns an array containing the constants of this enum type, in
+the order they are declared. This method may be used to iterate
+over the constants as follows: for (Team c : Team.values())
+  System.out.println(c); Returns: an array containing the constants of this enum type, in the order they are declared valueOf public static Team valueOf(java.lang.String name) Returns the enum constant of this type with the specified name.
+The string must match exactly an identifier used to declare an
+enum constant in this type. (Extraneous whitespace characters are
+not permitted.) Parameters: name - the name of the enum constant to be returned. Returns: the enum constant with the specified name Throws: java.lang.IllegalArgumentException - if this enum type has no constant with the specified name java.lang.NullPointerException - if the argument is null opponent public Team opponent() Determines the team that is the opponent of this team. Returns: the opponent of this team. Bytecode cost: 1 isPlayer public boolean isPlayer() Returns whether a robot of this team is a player-controlled entity
+(team A or team B). Returns: true a robot of this team is player-controlled; false otherwise. Bytecode cost: 1

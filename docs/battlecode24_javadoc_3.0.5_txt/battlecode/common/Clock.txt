@@ -1,0 +1,13 @@
+- java.lang.Object
+
+- battlecode.common.Clock
+
+- public final class Clock extends java.lang.Object Clock is a singleton that allows contestants to introspect the state of their
+running code.
+
+- Method Summary All Methods Static Methods Concrete Methods Modifier and Type Method and Description static int getBytecodeNum () Returns the number of bytecodes the current robot has executed since the
+beginning of the current round. static int getBytecodesLeft () Returns the number of bytecodes this robot has left in this round. static void yield () Ends the processing of this robot during the current round. Methods inherited from class java.lang.Object clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+
+- Method Detail yield public static void yield() Ends the processing of this robot during the current round. Never fails. Bytecode cost: 0 getBytecodesLeft public static int getBytecodesLeft() Returns the number of bytecodes this robot has left in this round. Returns: the number of bytecodes this robot has left in this round Bytecode cost: 0 getBytecodeNum public static int getBytecodeNum() Returns the number of bytecodes the current robot has executed since the
+beginning of the current round. Returns: the number of bytecodes the current robot has executed since the
+beginning of the current round Bytecode cost: 0

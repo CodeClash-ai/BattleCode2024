@@ -1,0 +1,37 @@
+- java.lang.Object
+
+- battlecode.common.MapLocation
+
+- All Implemented Interfaces: java.io.Serializable, java.lang.Comparable< MapLocation > public final class MapLocation extends java.lang.Object
+implements java.io.Serializable, java.lang.Comparable< MapLocation > This class is an immutable representation of two-dimensional coordinates
+in the battlecode world. See Also: Serialized Form
+
+- Field Summary Fields Modifier and Type Field and Description int x The x-coordinate. int y The y-coordinate. Constructor Summary Constructors Constructor and Description MapLocation (int x,
+int y) Creates a new MapLocation representing the location
+with the given coordinates. Method Summary All Methods Static Methods Instance Methods Concrete Methods Modifier and Type Method and Description MapLocation add ( Direction direction) Returns a new MapLocation object representing a location
+one unit in distance from this one in the given direction. int compareTo ( MapLocation other) A comparison function for MapLocations. Direction directionTo ( MapLocation location) Returns the closest approximate Direction from this MapLocation to location . int distanceSquaredTo ( MapLocation location) Computes the squared distance from this location to the specified
+location. boolean equals (java.lang.Object obj) Two MapLocations are regarded as equal iff
+their coordinates are the same. int hashCode () boolean isAdjacentTo ( MapLocation location) Determines whether this location is adjacent to a given location. boolean isWithinDistanceSquared ( MapLocation location,
+int distanceSquared) Determines whether this location is within a specified distance
+from target location. MapLocation subtract ( Direction direction) Returns a new MapLocation object representing a location
+one unit in distance from this one in the opposite direction
+of the given direction. java.lang.String toString () MapLocation translate (int dx,
+int dy) Returns a new MapLocation object translated from this location
+by a fixed amount. static MapLocation valueOf (java.lang.String s) Methods inherited from class java.lang.Object clone, finalize, getClass, notify, notifyAll, wait, wait, wait
+
+- Field Detail x public final int x The x-coordinate. y public final int y The y-coordinate. Constructor Detail MapLocation public MapLocation(int x,
+int y) Creates a new MapLocation representing the location
+with the given coordinates. Parameters: x - the x-coordinate of the location y - the y-coordinate of the location Method Detail compareTo public int compareTo( MapLocation other) A comparison function for MapLocations. Smaller x values go first, with ties broken by smaller y values. Specified by: compareTo in interface java.lang.Comparable< MapLocation > Parameters: other - the MapLocation to compare to. Returns: whether this MapLocation goes before the other one. Bytecode cost: 2 equals public boolean equals(java.lang.Object obj) Two MapLocations are regarded as equal iff
+their coordinates are the same. Overrides: equals in class java.lang.Object Bytecode cost: 2 hashCode public int hashCode() Overrides: hashCode in class java.lang.Object Bytecode cost: 2 valueOf public static MapLocation valueOf(java.lang.String s) toString public java.lang.String toString() Overrides: toString in class java.lang.Object Bytecode cost: 2 distanceSquaredTo public final int distanceSquaredTo( MapLocation location) Computes the squared distance from this location to the specified
+location. Parameters: location - the location to compute the squared distance to Returns: the squared distance to the given location Bytecode cost: 2 isWithinDistanceSquared public final boolean isWithinDistanceSquared( MapLocation location,
+int distanceSquared) Determines whether this location is within a specified distance
+from target location. Parameters: location - the location to test distanceSquared - the distance squared for the location to be within Returns: true if the given location is within distanceSquared to this one; false otherwise Bytecode cost: 2 isAdjacentTo public final boolean isAdjacentTo( MapLocation location) Determines whether this location is adjacent to a given location. Parameters: location - the target location Returns: true if the given location is adjacent to this one directionTo public final Direction directionTo( MapLocation location) Returns the closest approximate Direction from this MapLocation to location .
+If location is null then the return value is null.
+If location equals this location then the return value is Direction.CENTER. Parameters: location - The location to which the Direction will be calculated Returns: the Direction to location from this MapLocation Bytecode cost: 2 add public final MapLocation add( Direction direction) Returns a new MapLocation object representing a location
+one unit in distance from this one in the given direction. Parameters: direction - the direction to add to this location Returns: a MapLocation for the location one unit in distance in the given
+direction. Bytecode cost: 2 subtract public final MapLocation subtract( Direction direction) Returns a new MapLocation object representing a location
+one unit in distance from this one in the opposite direction
+of the given direction. Parameters: direction - the direction to subtract from this location Returns: a MapLocation for the location one unit in distance in the
+opposite of the given direction. Bytecode cost: 2 translate public final MapLocation translate(int dx,
+int dy) Returns a new MapLocation object translated from this location
+by a fixed amount. Parameters: dx - the amount to translate in the x direction dy - the amount to translate in the y direction Returns: the new MapLocation that is the translated version of the original. Bytecode cost: 2

@@ -1,0 +1,21 @@
+- java.lang.Object
+
+- java.lang.Throwable java.lang.Exception battlecode.common.GameActionException
+
+- All Implemented Interfaces: java.io.Serializable public class GameActionException extends java.lang.Exception An exception caused by a robot's interaction with the game world. For instance, trying to move
+a robot into an occupied square will cause a GameActionException to be thrown. Each GameActionException has a type that roughly identifies what
+caused the exception. In addition to GameActionException ,
+some robot functions can throw the unchecked exceptions IllegalStateException and IllegalArgumentException .
+An IllegalStateException is thrown if this robot can
+never successfully call the function.
+An IllegalArgumentException is thrown if this type of
+robot can never successfully call the function with the given arguments.
+A GameActionException is thrown in all other circumstances. See Also: Serialized Form
+
+- Constructor Summary Constructors Constructor and Description GameActionException ( GameActionExceptionType type,
+java.lang.String message) Creates a GameActionException with the given type and message. Method Summary All Methods Instance Methods Concrete Methods Modifier and Type Method and Description GameActionExceptionType getType () Gives the type of gameworld interaction that caused this GameActionException, which
+was specified when this instance was constructed. Methods inherited from class java.lang.Throwable addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString Methods inherited from class java.lang.Object clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
+
+- Constructor Detail GameActionException public GameActionException( GameActionExceptionType type,
+java.lang.String message) Creates a GameActionException with the given type and message. Parameters: type - the type of the GameActionException message - the error message Method Detail getType public GameActionExceptionType getType() Gives the type of gameworld interaction that caused this GameActionException, which
+was specified when this instance was constructed. Returns: this GameActionException's type

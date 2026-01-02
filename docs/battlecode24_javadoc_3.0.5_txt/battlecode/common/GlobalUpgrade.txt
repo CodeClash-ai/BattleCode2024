@@ -1,0 +1,20 @@
+- java.lang.Object
+
+- java.lang.Enum< GlobalUpgrade > battlecode.common.GlobalUpgrade
+
+- All Implemented Interfaces: java.io.Serializable, java.lang.Comparable< GlobalUpgrade > public enum GlobalUpgrade extends java.lang.Enum< GlobalUpgrade > Enumerates the possible types of global updates. More information about each
+update
+are available in the game specs.
+
+- Enum Constant Summary Enum Constants Enum Constant and Description ACTION !DO NOT USE!
+NOOP upgrade that is mostly equivalent to ATTACK and exists for backwards compatability ATTACK Attack upgrade increases the base attack by 60. CAPTURING Capture upgrade increases the dropped flag delay from 4 rounds to 25 rounds. HEALING Healing increases base heal by 50. Field Summary Fields Modifier and Type Field and Description int baseAttackChange How much base attack changes int baseHealChange How much base heal changes int flagReturnDelayChange How much dropped flag return delay changes int movementDelayChange How much the movement penalty for holding a flag changes. Method Summary All Methods Static Methods Concrete Methods Modifier and Type Method and Description static GlobalUpgrade valueOf (java.lang.String name) Returns the enum constant of this type with the specified name. static GlobalUpgrade [] values () Returns an array containing the constants of this enum type, in
+the order they are declared. Methods inherited from class java.lang.Enum clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf Methods inherited from class java.lang.Object getClass, notify, notifyAll, wait, wait, wait
+
+- Enum Constant Detail ATTACK public static final GlobalUpgrade ATTACK Attack upgrade increases the base attack by 60. HEALING public static final GlobalUpgrade HEALING Healing increases base heal by 50. CAPTURING public static final GlobalUpgrade CAPTURING Capture upgrade increases the dropped flag delay from 4 rounds to 25 rounds. It also decreases the movement penalty for holding a flag by 8. ACTION public static final GlobalUpgrade ACTION !DO NOT USE!
+NOOP upgrade that is mostly equivalent to ATTACK and exists for backwards compatability Field Detail baseAttackChange public final int baseAttackChange How much base attack changes baseHealChange public final int baseHealChange How much base heal changes flagReturnDelayChange public final int flagReturnDelayChange How much dropped flag return delay changes movementDelayChange public final int movementDelayChange How much the movement penalty for holding a flag changes. Method Detail values public static GlobalUpgrade [] values() Returns an array containing the constants of this enum type, in
+the order they are declared. This method may be used to iterate
+over the constants as follows: for (GlobalUpgrade c : GlobalUpgrade.values())
+  System.out.println(c); Returns: an array containing the constants of this enum type, in the order they are declared valueOf public static GlobalUpgrade valueOf(java.lang.String name) Returns the enum constant of this type with the specified name.
+The string must match exactly an identifier used to declare an
+enum constant in this type. (Extraneous whitespace characters are
+not permitted.) Parameters: name - the name of the enum constant to be returned. Returns: the enum constant with the specified name Throws: java.lang.IllegalArgumentException - if this enum type has no constant with the specified name java.lang.NullPointerException - if the argument is null

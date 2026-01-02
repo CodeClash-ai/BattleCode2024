@@ -1,0 +1,29 @@
+- java.lang.Object
+
+- battlecode.common.MapInfo
+
+- public class MapInfo extends java.lang.Object
+
+- Constructor Summary Constructors Constructor and Description MapInfo ( MapLocation loc,
+boolean isPassable,
+boolean isWall,
+boolean isDam,
+int spawnZone,
+boolean isWater,
+int crumbsAmount, TrapType trapType, Team territory) Method Summary All Methods Instance Methods Concrete Methods Modifier and Type Method and Description int getCrumbs () Returns the amount of crumbs on this square. MapLocation getMapLocation () Returns the location of this square int getSpawnZoneTeam () Returns 1 if this square is a Team A spawn zone,
+2 if this square is a Team B spawn zone, and
+0 if this square is not a spawn zone. Team getSpawnZoneTeamObject () Returns the team that owns that spawn zone at this location, or Team.NEUTRAL if the location is not a spawn zone. Team getTeamTerritory () Returns which team's territory this location is a part of. TrapType getTrapType () Returns the trap type of a friendly trap. boolean isDam () Returns if this square is a dam boolean isPassable () Returns if this square is passable. boolean isSpawnZone () Returns if this square is a spawn zone. boolean isWall () Returns if this square is a wall. boolean isWater () Returns if this square has water in it. java.lang.String toString () Methods inherited from class java.lang.Object clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
+
+- Constructor Detail MapInfo public MapInfo( MapLocation loc,
+boolean isPassable,
+boolean isWall,
+boolean isDam,
+int spawnZone,
+boolean isWater,
+int crumbsAmount, TrapType trapType, Team territory) Method Detail isPassable public boolean isPassable() Returns if this square is passable. Returns: whether this square is passable Bytecode cost: 2 isWall public boolean isWall() Returns if this square is a wall. Returns: whether this square is a wall Bytecode cost: 2 isDam public boolean isDam() Returns if this square is a dam Returns: whether this square is a dam Bytecode cost: 2 isSpawnZone public boolean isSpawnZone() Returns if this square is a spawn zone. Returns: whether this square is a spawn zone Bytecode cost: 2 getSpawnZoneTeam public int getSpawnZoneTeam() Returns 1 if this square is a Team A spawn zone,
+2 if this square is a Team B spawn zone, and
+0 if this square is not a spawn zone. Returns: 1 or 2 if the square is a Team A or B spawn zone, respectively; 0 otherwise Bytecode cost: 3 getSpawnZoneTeamObject public Team getSpawnZoneTeamObject() Returns the team that owns that spawn zone at this location, or Team.NEUTRAL if the location is not a spawn zone. Returns: The team that owns the spawn zone, or Team.NEUTRAL Bytecode cost: 2 isWater public boolean isWater() Returns if this square has water in it. Returns: whether this square has water Bytecode cost: 2 getCrumbs public int getCrumbs() Returns the amount of crumbs on this square.
+If there are no crumbs on the square, returns 0. Returns: the amount of crumbs on the square Bytecode cost: 3 getTrapType public TrapType getTrapType() Returns the trap type of a friendly trap. TrapType.NONE if there
+is no trap or there is an enemy trap. Returns: The trap type Bytecode cost: 2 getMapLocation public MapLocation getMapLocation() Returns the location of this square Returns: the location of this square Bytecode cost: 1 getTeamTerritory public Team getTeamTerritory() Returns which team's territory this location is a part of. A location is in a team's territory
+if it was accessible to that team's robots during the setup phase. Locations initially inaccessible to
+either team will return Team.NEUTRAL. Returns: The team territory that this location is a part of Bytecode cost: 2 toString public java.lang.String toString() Overrides: toString in class java.lang.Object

@@ -1,0 +1,11 @@
+## Class Hierarchy
+
+- java.lang.Object battlecode.common. Clock battlecode.common. FlagInfo battlecode.common. GameConstants battlecode.common. MapInfo battlecode.common. MapLocation (implements java.lang.Comparable<T>, java.io.Serializable) battlecode.common. RobotInfo java.lang.Throwable (implements java.io.Serializable) java.lang.Exception battlecode.common. GameActionException
+
+## Interface Hierarchy
+
+- battlecode.common. RobotController
+
+## Enum Hierarchy
+
+- java.lang.Object java.lang.Enum<E> (implements java.lang.Comparable<T>, java.io.Serializable) battlecode.common. GameActionExceptionType battlecode.common. GlobalUpgrade battlecode.common. TrapType battlecode.common. SkillType battlecode.common. Direction battlecode.common. Team

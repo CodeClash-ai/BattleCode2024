@@ -1,0 +1,11 @@
+========= START OF TOP NAVBAR =======
+
+========= END OF TOP NAVBAR =========
+
+- Package battlecode.common Class battlecode.common.GameActionException extends java.lang.Exception implements Serializable serialVersionUID: 1575948762L Serialized Fields type GameActionExceptionType type Class battlecode.common.MapLocation extends java.lang.Object implements Serializable serialVersionUID: -8945913587066072824L Serialized Fields x int x The x-coordinate. y int y The y-coordinate.
+
+======= START OF BOTTOM NAVBAR ======
+
+Skip navigation links
+
+======== END OF BOTTOM NAVBAR =======

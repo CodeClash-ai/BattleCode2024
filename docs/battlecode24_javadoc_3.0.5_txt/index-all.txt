@@ -1,0 +1,999 @@
+A B C D E F G H I J K L M N O P R S T V W X Y 
+
+## A
+
+actionCooldownIncrease - Variable in enum battlecode.common.TrapType
+
+What action cooldown is increased by within that radius
+
+add(Direction) - Method in class battlecode.common.MapLocation
+
+Returns a new MapLocation object representing a location
+one unit in distance from this one in the given direction.
+
+adjacentLocation(Direction) - Method in interface battlecode.common.RobotController
+
+Returns the location adjacent to current location in the given direction.
+
+allDirections() - Static method in enum battlecode.common.Direction
+
+Returns a list of all directions.
+
+attack(MapLocation) - Method in interface battlecode.common.RobotController
+
+Attack a given location.
+
+ATTACK_COOLDOWN - Static variable in class battlecode.common.GameConstants
+
+The amount added to the action cooldown counter after attacking
+
+ATTACK_RADIUS_SQUARED - Static variable in class battlecode.common.GameConstants
+
+The maximum distance for attacking an enemy robot
+
+attackLevel - Variable in class battlecode.common.RobotInfo
+
+The robot's current level in the attack skill.
+
+## B
+
+baseAttackChange - Variable in enum battlecode.common.GlobalUpgrade
+
+How much base attack changes
+
+baseHealChange - Variable in enum battlecode.common.GlobalUpgrade
+
+How much base heal changes
+
+battlecode.common - package battlecode.common
+
+ 
+
+build(TrapType, MapLocation) - Method in interface battlecode.common.RobotController
+
+Builds a trap at the given location.
+
+buildCost - Variable in enum battlecode.common.TrapType
+
+Crumbs cost of each trap
+
+buildLevel - Variable in class battlecode.common.RobotInfo
+
+The robot's current level in the build skill.
+
+buyGlobal(GlobalUpgrade) - Method in interface battlecode.common.RobotController
+
+Purchases the global upgrade and applies the effect to the game.
+
+BYTECODE_LIMIT - Static variable in class battlecode.common.GameConstants
+
+The maximum number of bytecodes a bot is allow to use in one turn
+
+## C
+
+canAttack(MapLocation) - Method in interface battlecode.common.RobotController
+
+Tests whether this robot can attack the given location.
+
+canBuild(TrapType, MapLocation) - Method in interface battlecode.common.RobotController
+
+Checks if a trap can be built at the given location.
+
+canBuyGlobal(GlobalUpgrade) - Method in interface battlecode.common.RobotController
+
+Tests whether you can buy an upgrade.
+
+canDig(MapLocation) - Method in interface battlecode.common.RobotController
+
+Checks if a robot can dig (create water) at the specified location.
+
+canDropFlag(MapLocation) - Method in interface battlecode.common.RobotController
+
+Tests whether the robot can drop a flag at the current location.
+
+canFill(MapLocation) - Method in interface battlecode.common.RobotController
+
+Checks if a location can be filled.
+
+canHeal(MapLocation) - Method in interface battlecode.common.RobotController
+
+Tests whether this robot can heal a nearby friendly unit.
+
+canMove(Direction) - Method in interface battlecode.common.RobotController
+
+Checks whether this robot can move one step in the given direction.
+
+canPickupFlag(MapLocation) - Method in interface battlecode.common.RobotController
+
+Tests whether robot can pickup a flag at the current location.
+
+canSenseLocation(MapLocation) - Method in interface battlecode.common.RobotController
+
+Checks whether the given location is within the robot's vision range, and if it is on the map.
+
+canSenseRobot(int) - Method in interface battlecode.common.RobotController
+
+Tests whether the given robot exists and if it is within this robot's
+vision range.
+
+canSenseRobotAtLocation(MapLocation) - Method in interface battlecode.common.RobotController
+
+Checks whether a robot is at a given location.
+
+canSpawn(MapLocation) - Method in interface battlecode.common.RobotController
+
+Checks if the robot is allowed to spawn at the given location.
+
+canWriteSharedArray(int, int) - Method in interface battlecode.common.RobotController
+
+Checks if the given index and value are valid for writing to the shared array.
+
+cardinalDirections() - Static method in enum battlecode.common.Direction
+
+Returns a list of all cardinal directions.
+
+Clock - Class in battlecode.common
+
+Clock is a singleton that allows contestants to introspect the state of their
+running code.
+
+compareTo(MapLocation) - Method in class battlecode.common.MapLocation
+
+A comparison function for MapLocations.
+
+cooldown - Variable in enum battlecode.common.SkillType
+
+ 
+
+COOLDOWN_LIMIT - Static variable in class battlecode.common.GameConstants
+
+If the amount of cooldown is at least this value, a robot cannot act.
+
+COOLDOWNS_PER_TURN - Static variable in class battlecode.common.GameConstants
+
+The number of cooldown turns reduced per turn.
+
+## D
+
+DEFAULT_HEALTH - Static variable in class battlecode.common.GameConstants
+
+health each robot starts with
+
+dig(MapLocation) - Method in interface battlecode.common.RobotController
+
+Removes land and creates water in a location.
+
+DIG_COOLDOWN - Static variable in class battlecode.common.GameConstants
+
+The amount added to the action cooldown counter after digging
+
+DIG_COST - Static variable in class battlecode.common.GameConstants
+
+Crumbs cost for digging.
+
+Direction - Enum in battlecode.common
+
+This enumeration represents a direction from one MapLocation to another.
+
+DIRECTION_ORDER - Static variable in enum battlecode.common.Direction
+
+ 
+
+directionTo(MapLocation) - Method in class battlecode.common.MapLocation
+
+Returns the closest approximate Direction from this MapLocation to location.
+
+distanceSquaredTo(MapLocation) - Method in class battlecode.common.MapLocation
+
+Computes the squared distance from this location to the specified
+location.
+
+doesDig - Variable in enum battlecode.common.TrapType
+
+if the trap digs all nonoccupied locations within its radius
+
+dropFlag(MapLocation) - Method in interface battlecode.common.RobotController
+
+Places a flag at the current location on the map.
+
+dx - Variable in enum battlecode.common.Direction
+
+Change in x.
+
+dy - Variable in enum battlecode.common.Direction
+
+Change in y.
+
+## E
+
+enterDamage - Variable in enum battlecode.common.TrapType
+
+The damage done if trap triggered by opponent entering a location
+
+enterRadius - Variable in enum battlecode.common.TrapType
+
+The radius of effect if trap is triggered by opponent entering a location
+
+equals(Object) - Method in class battlecode.common.MapLocation
+
+Two MapLocations are regarded as equal iff
+their coordinates are the same.
+
+equals(Object) - Method in class battlecode.common.RobotInfo
+
+ 
+
+EXCEPTION_BYTECODE_PENALTY - Static variable in class battlecode.common.GameConstants
+
+The bytecode penalty that is imposed each time an exception is thrown.
+
+## F
+
+fill(MapLocation) - Method in interface battlecode.common.RobotController
+
+Fills a water location with land.
+
+FILL_COOLDOWN - Static variable in class battlecode.common.GameConstants
+
+The amount added to the action cooldown counter after filling
+
+FILL_COST - Static variable in class battlecode.common.GameConstants
+
+Crumbs cost for filling
+
+FLAG_BROADCAST_NOISE_RADIUS - Static variable in class battlecode.common.GameConstants
+
+The maximum squared distance bewteen the actual flag location and the noisy broadcast location
+
+FLAG_BROADCAST_UPDATE_INTERVAL - Static variable in class battlecode.common.GameConstants
+
+Number of rounds between updating the random noisy flag broadcast location
+
+FLAG_DROPPED_RESET_ROUNDS - Static variable in class battlecode.common.GameConstants
+
+The default number of rounds before dropped flags reset to their default locations
+
+FLAG_MOVEMENT_COOLDOWN - Static variable in class battlecode.common.GameConstants
+
+The amount added to the movement cooldown counter when moving while carrying a flag
+
+FlagInfo - Class in battlecode.common
+
+ 
+
+FlagInfo(MapLocation, Team, boolean, int) - Constructor for class battlecode.common.FlagInfo
+
+ 
+
+flagReturnDelayChange - Variable in enum battlecode.common.GlobalUpgrade
+
+How much dropped flag return delay changes
+
+## G
+
+GAME_DEFAULT_SEED - Static variable in class battlecode.common.GameConstants
+
+The default game seed.
+
+GAME_MAX_NUMBER_OF_ROUNDS - Static variable in class battlecode.common.GameConstants
+
+The maximum number of rounds in a game.
+
+GameActionException - Exception in battlecode.common
+
+An exception caused by a robot's interaction with the game world.
+
+GameActionException(GameActionExceptionType, String) - Constructor for exception battlecode.common.GameActionException
+
+Creates a GameActionException with the given type and message.
+
+GameActionExceptionType - Enum in battlecode.common
+
+Enumerates the possible errors in GameWorld interactions that cause a GameActionException to be thrown.
+
+GameConstants - Class in battlecode.common
+
+GameConstants defines constants that affect gameplay.
+
+GameConstants() - Constructor for class battlecode.common.GameConstants
+
+ 
+
+getActionCooldownTurns() - Method in interface battlecode.common.RobotController
+
+Returns the number of action cooldown turns remaining before this unit can act again.
+
+getAllLocationsWithinRadiusSquared(MapLocation, int) - Method in interface battlecode.common.RobotController
+
+Returns a list of all locations within the given radiusSquared of a location.
+
+getAllySpawnLocations() - Method in interface battlecode.common.RobotController
+
+Returns a MapLocation array of all locations with an ally spawn zone on them.
+
+getAttackDamage() - Method in interface battlecode.common.RobotController
+
+Gets the true attack damage of this robot accounting for all effects.
+
+getAttackLevel() - Method in class battlecode.common.RobotInfo
+
+Returns the attack level of this robot.
+
+getBuildLevel() - Method in class battlecode.common.RobotInfo
+
+Returns the build level of this robot.
+
+getBytecodeNum() - Static method in class battlecode.common.Clock
+
+Returns the number of bytecodes the current robot has executed since the
+beginning of the current round.
+
+getBytecodesLeft() - Static method in class battlecode.common.Clock
+
+Returns the number of bytecodes this robot has left in this round.
+
+getCooldown(int) - Method in enum battlecode.common.SkillType
+
+Returns the change in cooldown for each level.
+
+getCrumbs() - Method in class battlecode.common.MapInfo
+
+Returns the amount of crumbs on this square.
+
+getCrumbs() - Method in interface battlecode.common.RobotController
+
+Returns the amount of crumbs that this robot's team has.
+
+getDeltaX() - Method in enum battlecode.common.Direction
+
+Returns the delta X of the direction.
+
+getDeltaY() - Method in enum battlecode.common.Direction
+
+Returns the delta Y of the direction.
+
+getDirectionOrderNum() - Method in enum battlecode.common.Direction
+
+ 
+
+getExperience(SkillType) - Method in interface battlecode.common.RobotController
+
+Returns the robot's current experience in the specified skill.
+
+getExperience(int) - Method in enum battlecode.common.SkillType
+
+Returns the number of experience points needed to achieve each level.
+
+getGlobalUpgrades(Team) - Method in interface battlecode.common.RobotController
+
+Returns the global upgrades that the given team has
+
+getHealAmount() - Method in interface battlecode.common.RobotController
+
+Gets the true healing amount of this robot accounting for all effects.
+
+getHealLevel() - Method in class battlecode.common.RobotInfo
+
+Returns the heal level of this robot.
+
+getHealth() - Method in interface battlecode.common.RobotController
+
+Returns this robot's current health.
+
+getHealth() - Method in class battlecode.common.RobotInfo
+
+Returns the health of this robot.
+
+getID() - Method in class battlecode.common.FlagInfo
+
+ 
+
+getID() - Method in interface battlecode.common.RobotController
+
+Returns the ID of this robot.
+
+getID() - Method in class battlecode.common.RobotInfo
+
+Returns the ID of this robot.
+
+getLevel(SkillType) - Method in interface battlecode.common.RobotController
+
+Returns the robot's current level in the specified skill.
+
+getLevel(int) - Method in enum battlecode.common.SkillType
+
+Returns the level of specialization a robot is given their experience
+
+getLocation() - Method in class battlecode.common.FlagInfo
+
+ 
+
+getLocation() - Method in interface battlecode.common.RobotController
+
+Returns this robot's current location.
+
+getLocation() - Method in class battlecode.common.RobotInfo
+
+Returns the location of this robot.
+
+getMapHeight() - Method in interface battlecode.common.RobotController
+
+Returns the height of the game map.
+
+getMapLocation() - Method in class battlecode.common.MapInfo
+
+Returns the location of this square
+
+getMapWidth() - Method in interface battlecode.common.RobotController
+
+Returns the width of the game map.
+
+getMovementCooldownTurns() - Method in interface battlecode.common.RobotController
+
+Returns the number of movement cooldown turns remaining before this unit can move again.
+
+getPenalty(int) - Method in enum battlecode.common.SkillType
+
+Returns the penalty of experience points from being jailed in each level
+
+getRoundNum() - Method in interface battlecode.common.RobotController
+
+Returns the current round number, where round 1 is the first round of the
+match.
+
+getSkillEffect(int) - Method in enum battlecode.common.SkillType
+
+Returns the change in skill effect for each level
+
+getSpawnZoneTeam() - Method in class battlecode.common.MapInfo
+
+Returns 1 if this square is a Team A spawn zone,
+2 if this square is a Team B spawn zone, and
+0 if this square is not a spawn zone.
+
+getSpawnZoneTeamObject() - Method in class battlecode.common.MapInfo
+
+Returns the team that owns that spawn zone at this location, or Team.NEUTRAL if the location is not a spawn zone.
+
+getTeam() - Method in class battlecode.common.FlagInfo
+
+ 
+
+getTeam() - Method in interface battlecode.common.RobotController
+
+Returns this robot's Team.
+
+getTeam() - Method in class battlecode.common.RobotInfo
+
+Returns the team that this robot is on.
+
+getTeamTerritory() - Method in class battlecode.common.MapInfo
+
+Returns which team's territory this location is a part of.
+
+getTrapType() - Method in class battlecode.common.MapInfo
+
+Returns the trap type of a friendly trap.
+
+getType() - Method in exception battlecode.common.GameActionException
+
+Gives the type of gameworld interaction that caused this GameActionException, which
+was specified when this instance was constructed.
+
+GLOBAL_UPGRADE_ROUNDS - Static variable in class battlecode.common.GameConstants
+
+Number of rounds between adding a global upgrade point
+
+GlobalUpgrade - Enum in battlecode.common
+
+Enumerates the possible types of global updates.
+
+## H
+
+hasFlag() - Method in interface battlecode.common.RobotController
+
+Checks whether robot is currently holding a flag.
+
+hasFlag - Variable in class battlecode.common.RobotInfo
+
+Whether or not the robot is holding a flag.
+
+hasFlag() - Method in class battlecode.common.RobotInfo
+
+Returns whether or not this robot has a flag.
+
+hashCode() - Method in class battlecode.common.MapLocation
+
+hashCode() - Method in class battlecode.common.RobotInfo
+
+ 
+
+heal(MapLocation) - Method in interface battlecode.common.RobotController
+
+Heal a nearby friendly unit.
+
+HEAL_COOLDOWN - Static variable in class battlecode.common.GameConstants
+
+The amount added to the action cooldown counter after healing
+
+HEAL_RADIUS_SQUARED - Static variable in class battlecode.common.GameConstants
+
+The maximum distance for healing an ally robot
+
+healLevel - Variable in class battlecode.common.RobotInfo
+
+The robot's current level in the heal skill.
+
+health - Variable in class battlecode.common.RobotInfo
+
+The health of the robot.
+
+## I
+
+ID - Variable in class battlecode.common.RobotInfo
+
+The unique ID of the robot.
+
+INDICATOR_STRING_MAX_LENGTH - Static variable in class battlecode.common.GameConstants
+
+The maximum length of indicator strings that a player can associate with a robot.
+
+INITIAL_CRUMBS_AMOUNT - Static variable in class battlecode.common.GameConstants
+
+The initial amount of crumbs each team starts with.
+
+INTERACT_RADIUS_SQUARED - Static variable in class battlecode.common.GameConstants
+
+The maximum distnace for picking up / dropping flags, building traps, digging, and filling
+
+interactDamage - Variable in enum battlecode.common.TrapType
+
+The damagge done if trap triggered by opponent building/breaking at location
+
+interactRadius - Variable in enum battlecode.common.TrapType
+
+The radius of effect if trap is triggered by opponent building/breaking at a location
+
+isActionReady() - Method in interface battlecode.common.RobotController
+
+Tests whether the robot can act.
+
+isAdjacentTo(MapLocation) - Method in class battlecode.common.MapLocation
+
+Determines whether this location is adjacent to a given location.
+
+isDam() - Method in class battlecode.common.MapInfo
+
+Returns if this square is a dam
+
+isInvisible - Variable in enum battlecode.common.TrapType
+
+If trap is invisible to opponents
+
+isLocationOccupied(MapLocation) - Method in interface battlecode.common.RobotController
+
+Checks whether a robot is at a given location.
+
+isMovementReady() - Method in interface battlecode.common.RobotController
+
+Tests whether the robot can move.
+
+isPassable() - Method in class battlecode.common.MapInfo
+
+Returns if this square is passable.
+
+isPickedUp() - Method in class battlecode.common.FlagInfo
+
+ 
+
+isPlayer() - Method in enum battlecode.common.Team
+
+Returns whether a robot of this team is a player-controlled entity
+(team A or team B).
+
+isSpawned() - Method in interface battlecode.common.RobotController
+
+Checks whether a robot is spawned.
+
+isSpawnZone() - Method in class battlecode.common.MapInfo
+
+Returns if this square is a spawn zone.
+
+isWall() - Method in class battlecode.common.MapInfo
+
+Returns if this square is a wall.
+
+isWater() - Method in class battlecode.common.MapInfo
+
+Returns if this square has water in it.
+
+isWithinDistanceSquared(MapLocation, int) - Method in class battlecode.common.MapLocation
+
+Determines whether this location is within a specified distance
+from target location.
+
+## J
+
+JAILED_ROUNDS - Static variable in class battlecode.common.GameConstants
+
+Number of rounds robots must spend in jail before respawning
+
+## K
+
+KILL_CRUMB_REWARD - Static variable in class battlecode.common.GameConstants
+
+The amount of crumbs you gain if your bot kills an enemy while in enemy territory
+
+## L
+
+location - Variable in class battlecode.common.RobotInfo
+
+The current location of the robot.
+
+## M
+
+MAP_MAX_HEIGHT - Static variable in class battlecode.common.GameConstants
+
+The maximum possible map height.
+
+MAP_MAX_WIDTH - Static variable in class battlecode.common.GameConstants
+
+The maximum possible map width.
+
+MAP_MIN_HEIGHT - Static variable in class battlecode.common.GameConstants
+
+The minimum possible map height.
+
+MAP_MIN_WIDTH - Static variable in class battlecode.common.GameConstants
+
+The minimum possible map width.
+
+MapInfo - Class in battlecode.common
+
+ 
+
+MapInfo(MapLocation, boolean, boolean, boolean, int, boolean, int, TrapType, Team) - Constructor for class battlecode.common.MapInfo
+
+ 
+
+MapLocation - Class in battlecode.common
+
+This class is an immutable representation of two-dimensional coordinates
+in the battlecode world.
+
+MapLocation(int, int) - Constructor for class battlecode.common.MapLocation
+
+Creates a new MapLocation representing the location
+with the given coordinates.
+
+MAX_SHARED_ARRAY_VALUE - Static variable in class battlecode.common.GameConstants
+
+The maximum value in shared communication arrays.
+
+MIN_FLAG_SPACING_SQUARED - Static variable in class battlecode.common.GameConstants
+
+The minimum distance between ally flags in the initial map and at the end of the seutp phase
+
+move(Direction) - Method in interface battlecode.common.RobotController
+
+Moves one step in the given direction.
+
+MOVEMENT_COOLDOWN - Static variable in class battlecode.common.GameConstants
+
+The amount added to the movement cooldown counter when moving without a flag
+
+movementDelayChange - Variable in enum battlecode.common.GlobalUpgrade
+
+How much the movement penalty for holding a flag changes.
+
+## N
+
+NUMBER_FLAGS - Static variable in class battlecode.common.GameConstants
+
+The number of flags a player starts with.
+
+## O
+
+onTheMap(MapLocation) - Method in interface battlecode.common.RobotController
+
+Checks whether a MapLocation is on the map.
+
+opponent() - Method in enum battlecode.common.Team
+
+Determines the team that is the opponent of this team.
+
+opponentCooldown - Variable in enum battlecode.common.TrapType
+
+Cooldown for opponents
+
+opposite() - Method in enum battlecode.common.Direction
+
+Computes the direction opposite this one.
+
+## P
+
+PASSIVE_CRUMBS_INCREASE - Static variable in class battlecode.common.GameConstants
+
+The amount of crumbs each team gains per turn.
+
+PICKUP_DROP_COOLDOWN - Static variable in class battlecode.common.GameConstants
+
+The amount added to the action cooldown counter after picking up or dropping a flag
+
+pickupFlag(MapLocation) - Method in interface battlecode.common.RobotController
+
+Picks up flag at the specified location.
+
+## R
+
+readSharedArray(int) - Method in interface battlecode.common.RobotController
+
+Given an index, returns the value at that index in the team array.
+
+resign() - Method in interface battlecode.common.RobotController
+
+Causes your team to lose the game.
+
+ROBOT_CAPACITY - Static variable in class battlecode.common.GameConstants
+
+The total number of robots a team has (both despawned or spawned).
+
+RobotController - Interface in battlecode.common
+
+A RobotController allows contestants to make their robot sense and interact
+with the game world.
+
+RobotInfo - Class in battlecode.common
+
+RobotInfo stores basic information that was 'sensed' of another Robot.
+
+RobotInfo(int, Team, int, MapLocation, boolean, int, int, int) - Constructor for class battlecode.common.RobotInfo
+
+ 
+
+rotateLeft() - Method in enum battlecode.common.Direction
+
+Computes the direction 45 degrees to the left (counter-clockwise)
+of this one.
+
+rotateRight() - Method in enum battlecode.common.Direction
+
+Computes the direction 45 degrees to the right (clockwise)
+of this one.
+
+## S
+
+senseBroadcastFlagLocations() - Method in interface battlecode.common.RobotController
+
+Returns the locations of all invisible dropped enemy flags, accurate within a radius of sqrt(100) cells.
+
+senseLegalStartingFlagPlacement(MapLocation) - Method in interface battlecode.common.RobotController
+
+Checks if the given location within vision radius is a legal starting flag placement.
+
+senseMapInfo(MapLocation) - Method in interface battlecode.common.RobotController
+
+Senses the map info at a location.
+
+senseNearbyCrumbs(int) - Method in interface battlecode.common.RobotController
+
+Returns all locations that contain crumbs within a certain radius of the robot.
+
+senseNearbyFlags(int) - Method in interface battlecode.common.RobotController
+
+Returns the location of all nearby flags that are visible to the robot, including picked up flags.
+
+senseNearbyFlags(int, Team) - Method in interface battlecode.common.RobotController
+
+Returns the location of all nearby flags that are visible to the robot, including picked up flags.
+
+senseNearbyMapInfos() - Method in interface battlecode.common.RobotController
+
+Return map info for all senseable locations.
+
+senseNearbyMapInfos(int) - Method in interface battlecode.common.RobotController
+
+Return map info for all senseable locations within a radius squared.
+
+senseNearbyMapInfos(MapLocation) - Method in interface battlecode.common.RobotController
+
+Return map info for all senseable locations within vision radius of a center location.
+
+senseNearbyMapInfos(MapLocation, int) - Method in interface battlecode.common.RobotController
+
+Return map info for all senseable locations within a radius squared of a center location.
+
+senseNearbyRobots() - Method in interface battlecode.common.RobotController
+
+Returns all robots within vision radius.
+
+senseNearbyRobots(int) - Method in interface battlecode.common.RobotController
+
+Returns all robots that can be sensed within a certain distance of this
+robot.
+
+senseNearbyRobots(int, Team) - Method in interface battlecode.common.RobotController
+
+Returns all robots of a given team that can be sensed within a certain
+distance of this robot.
+
+senseNearbyRobots(MapLocation, int, Team) - Method in interface battlecode.common.RobotController
+
+Returns all robots of a given team that can be sensed within a certain
+radius of a specified location.
+
+sensePassability(MapLocation) - Method in interface battlecode.common.RobotController
+
+Given a senseable location, returns whether that location is passable (not water, a wall, or a dam).
+
+senseRobot(int) - Method in interface battlecode.common.RobotController
+
+Senses information about a particular robot given its ID.
+
+senseRobotAtLocation(MapLocation) - Method in interface battlecode.common.RobotController
+
+Senses the robot at the given location, or null if there is no robot
+there.
+
+setIndicatorDot(MapLocation, int, int, int) - Method in interface battlecode.common.RobotController
+
+Draw a dot on the game map for debugging purposes.
+
+setIndicatorLine(MapLocation, MapLocation, int, int, int) - Method in interface battlecode.common.RobotController
+
+Draw a line on the game map for debugging purposes.
+
+setIndicatorString(String) - Method in interface battlecode.common.RobotController
+
+Sets the indicator string for this robot for debugging purposes.
+
+SETUP_ROUNDS - Static variable in class battlecode.common.GameConstants
+
+The end of the setup rounds in the game
+
+SHARED_ARRAY_LENGTH - Static variable in class battlecode.common.GameConstants
+
+The length of each team's shared communication array.
+
+skillEffect - Variable in enum battlecode.common.SkillType
+
+ 
+
+SkillType - Enum in battlecode.common
+
+Enumerates the different skill types a unit can specialize in.
+
+spawn(MapLocation) - Method in interface battlecode.common.RobotController
+
+Spawns the robot at the given location.
+
+SPEC_VERSION - Static variable in class battlecode.common.GameConstants
+
+The current spec version the server compiles with.
+
+subtract(Direction) - Method in class battlecode.common.MapLocation
+
+Returns a new MapLocation object representing a location
+one unit in distance from this one in the opposite direction
+of the given direction.
+
+## T
+
+team - Variable in class battlecode.common.RobotInfo
+
+The Team that the robot is on.
+
+Team - Enum in battlecode.common
+
+This enum represents the team of a robot.
+
+toString() - Method in class battlecode.common.MapInfo
+
+ 
+
+toString() - Method in class battlecode.common.MapLocation
+
+toString() - Method in class battlecode.common.RobotInfo
+
+ 
+
+translate(int, int) - Method in class battlecode.common.MapLocation
+
+Returns a new MapLocation object translated from this location
+by a fixed amount.
+
+TrapType - Enum in battlecode.common
+
+Enumerates possible traps that can be built.
+
+triggerRadius - Variable in enum battlecode.common.TrapType
+
+The radius that the trap can be triggered from by building
+
+## V
+
+valueOf(String) - Static method in enum battlecode.common.Direction
+
+Returns the enum constant of this type with the specified name.
+
+valueOf(String) - Static method in enum battlecode.common.GameActionExceptionType
+
+Returns the enum constant of this type with the specified name.
+
+valueOf(String) - Static method in enum battlecode.common.GlobalUpgrade
+
+Returns the enum constant of this type with the specified name.
+
+valueOf(String) - Static method in class battlecode.common.MapLocation
+
+ 
+
+valueOf(String) - Static method in enum battlecode.common.SkillType
+
+Returns the enum constant of this type with the specified name.
+
+valueOf(String) - Static method in enum battlecode.common.Team
+
+Returns the enum constant of this type with the specified name.
+
+valueOf(String) - Static method in enum battlecode.common.TrapType
+
+Returns the enum constant of this type with the specified name.
+
+values() - Static method in enum battlecode.common.Direction
+
+Returns an array containing the constants of this enum type, in
+the order they are declared.
+
+values() - Static method in enum battlecode.common.GameActionExceptionType
+
+Returns an array containing the constants of this enum type, in
+the order they are declared.
+
+values() - Static method in enum battlecode.common.GlobalUpgrade
+
+Returns an array containing the constants of this enum type, in
+the order they are declared.
+
+values() - Static method in enum battlecode.common.SkillType
+
+Returns an array containing the constants of this enum type, in
+the order they are declared.
+
+values() - Static method in enum battlecode.common.Team
+
+Returns an array containing the constants of this enum type, in
+the order they are declared.
+
+values() - Static method in enum battlecode.common.TrapType
+
+Returns an array containing the constants of this enum type, in
+the order they are declared.
+
+VISION_RADIUS_SQUARED - Static variable in class battlecode.common.GameConstants
+
+The maximum distance from a robot where information can be sensed
+
+## W
+
+writeSharedArray(int, int) - Method in interface battlecode.common.RobotController
+
+Sets the team's array value at a specified index.
+
+## X
+
+x - Variable in class battlecode.common.MapLocation
+
+The x-coordinate.
+
+## Y
+
+y - Variable in class battlecode.common.MapLocation
+
+The y-coordinate.
+
+yield() - Static method in class battlecode.common.Clock
+
+Ends the processing of this robot during the current round.
+
+A B C D E F G H I J K L M N O P R S T V W X Y
